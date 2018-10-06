@@ -10,7 +10,7 @@ public class TutorialController:MonoBehaviour
     void Update()
     {
         // if(Input.GetMouseButtonDown(0) && canClick)
-        if (Input.GetKeyDown(KeyCode.JoystickButton0) && canClick)
+        if (KeyboardHandler.IsOkButtonDown() && canClick)
         {
             canClick = false;
             GetComponent<Animator>().SetTrigger("finish");       
